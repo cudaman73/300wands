@@ -7,7 +7,7 @@
 		let el = document.querySelector("#diceResult");
 		el.innerHTML += 'You rolled a ' + result + '!<br />'
 	};
-	
+
 	function getRandomCustom(){
 		let numDice = document.getElementById('numDice').value;
 		let sizeDice = document.getElementById('sizeDice').value;
@@ -35,11 +35,10 @@ $(function() {
 			alert (e || e.message);
 		}
 	});
-	
+
 	$("#wandReset").click(function(){
 		try {
-			let el = document.querySelector('#wandResult');
-			el.innerHTML = ' ';
+			document.querySelector('#wandResult').innerHTML = ' ';
 		}
 		catch(e) {
 			alert (e || e.message);
@@ -48,8 +47,7 @@ $(function() {
 
 	$("#diceReset").click(function(){
 		try {
-			let el = document.querySelector('#diceResult');
-			el.innerHTML = ' ';
+			document.querySelector('#diceResult').innerHTML = ' ';
 		}
 		catch(e) {
 			alert (e || e.message);
