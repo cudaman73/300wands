@@ -8,39 +8,30 @@
   </head>
 
   <body style="background-color: #dddddd">
-    <div class="row">
-      <div class="col-md-12 text-center" style="background-color: #0063ce; color: #f8f8f8">
-          <h1>Curse of 300 wands!</h1>
+    <div class="row text-center bg-dark">
+      <div class="col-md-12">
+        <h1>Curse of 300 wands!</h1>
       </div>
     </div>
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <input type="button" class="form-control text-center" id="wandButton" value="Use a wand!">
-          <input type="button" class="form-control text-center" id="wandReset" value="Clear effects">
+          <input type="button" class="form-control btn-primary my-1" id="wandButton" value="Use a wand!">
+          <input type="button" class="form-control btn-primary mb-1" id="wandReset" value="Clear effects">
         </div>
         <div class="col-md-2">
-          <input type="button" class="form-control text-center" id="d4" value="1d4" onclick="getRandomInt(4)">
-          <input type="button" class="form-control text-center" id="d6" value="1d6" onclick="getRandomInt(6)">
-          <div class="mom">
-            <div class="child">
-              <input type="text" id="numDice" size="2">
-            </div>
-            <div class="child">d</div>
-            <div class="child">
-              <input type="text" id="sizeDice" size="2">
-            </div>
-          </div>
+          <input type="button" class="form-control btn-primary my-1" id="d4" value="1d4" onclick="getRandomInt(4)">
+          <input type="button" class="form-control btn-primary mb-1" id="d6" value="1d6" onclick="getRandomInt(6)">
+          <input type="button" class="form-control btn-primary mb-1" id="nDice" value="Custom" onclick="getRandomCustom()">
         </div>
         <div class="col-md-2">
-          <input type="button" class="form-control text-center" id="d8" value="1d8" onclick="getRandomInt(8)">
-          <input type="button" class="form-control text-center" id="d10" value="1d10" onclick="getRandomInt(10)">
-          <input type="button" class="form-control text-center" id="nDice" value="XdXX" onclick="getRandomCustom()">
+          <input type="button" class="form-control btn-primary my-1" id="d8" value="1d8" onclick="getRandomInt(8)">
+          <input type="button" class="form-control btn-primary mb-1" id="d10" value="1d10" onclick="getRandomInt(10)">
         </div>
         <div class="col-md-2">
-          <input type="button" class="form-control text-center" id="d12" value="1d12" onclick="getRandomInt(12)">
-          <input type="button" class="form-control text-center" id="d20" value="1d20" onclick="getRandomInt(20)">
-          <input type="button" class="form-control text-center" id="diceReset" value="Reset Dice">
+          <input type="button" class="form-control btn-primary my-1" id="d12" value="1d12" onclick="getRandomInt(12)">
+          <input type="button" class="form-control btn-primary mb-1" id="d20" value="1d20" onclick="getRandomInt(20)">
+          <input type="button" class="form-control btn-primary mb-1" id="diceReset" value="Reset Dice">
         </div>
       </div>
       <div class="row">
@@ -64,7 +55,6 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="array.js"></script>
     <script src="useWand.js"></script>
   </body>

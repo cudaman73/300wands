@@ -1,15 +1,3 @@
-.mom {
-    width: 100%; /* Try setting this to 400px or something */
-    display: table;
-    border: 0px solid #444444;
-}
-.child {
-    display: table-cell;
-	margin-left: 0px;
-}
-.childinner {
-    margin-left: 0px;
-    /* Decorative .. */
-    background-color: #cccccc;
-    min-height: 40px;
+h1 {
+  color: white;
 }
